@@ -5,12 +5,11 @@ var express 		= require('express'),
 	exphbs			= require('express-handlebars'),
     routes          = require('./routes/routes') 
 	Instagram		= require('instagram-node-lib'),
-	config 			= require('../config'), 
 	app 			= express();
 
 
-var clientid = process.env.INSTAGRAM_CLIENTID || config.instagram.clientID;
-var clientsecret = process.env.INSTAGRAM_CLIENTSECRET || config.instagram.clientSecret;
+var clientid = process.env.INSTAGRAM_CLIENTID;
+var clientsecret = process.env.INSTAGRAM_CLIENTSECRET;
 
 //Set up server
 app.set('port', process.env.PORT || 3000 );

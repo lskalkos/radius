@@ -1,0 +1,30 @@
+<div id="search">
+
+		<div id="background">
+			{{#poplist}}<img src="{{url}}" />{{/poplist}}
+			<div class="clearfix"></div>
+		</div>
+
+		<div id="intro">
+			<p class="lead">See the latest Instragram photos within 1000 meters of any location.</p>
+		</div>
+
+		<form class="form-horizontal" role="form" method="POST">
+			<div class="form-group">
+		  		<div class="col-md-3"></div>
+		    	<div id="first_box" class="col-md-6 text-center">
+		      		<input type="text" name="location" id="pac-input" class="form-control" id="address" placeholder="Where are you?">
+		      		<input type="hidden" name="latitude" class="form-control" id="latitude">
+		      		<input type="hidden" name="longitude" class="form-control" id="longitude">
+		      		<button type="submit" id="button" class="btn btn-success btn-lg ">Submit</button>
+		    	</div>
+		    	<div class="col-md-3"></div>
+		  	</div>
+		</form>
+
+		<footer>Created with love by <a href="http://www.github.com/lskalkos">lskalkos</a> &copy; 2014</footer>
+
+		<div class="clearfix"></div>
+	
+</div>
+

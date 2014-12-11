@@ -8,6 +8,10 @@ var express 		= require('express'),
 	config 			= require('../config'), 
 	app 			= express();
 
+
+var clientid = process.env.INSTAGRAM_CLIENTID || config.instagram.clientID;
+var clientsecret = process.env.INSTAGRAM_CLIENTSECRET || config.instagram.clientSecret;
+
 //Set up server
 app.set('port', process.env.PORT || 3000 );
 
@@ -22,8 +26,8 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 //Set up Instagram connection
-Instagram.set('client_id', config.instagram.clientID);
-Instagram.set('client_secret', config.instagram.clientSecret);
+Instagram.set('client_id', clientid);
+Instagram.set('client_secret', clientsecret);
 
 //Middleware
 app.use(bodyParser.urlencoded({

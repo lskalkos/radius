@@ -8,4 +8,4 @@ Homepage background shows a selection of the current most popular photos.
 
 Repo includes a Gruntfile.js. 
 
-Run `npm init` and `bower init` to get started. 
+Run `npm install` and `bower install` to get started. 
